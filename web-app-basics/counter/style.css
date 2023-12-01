@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(255, 183, 0);
+  padding: 1rem;
+  height: 15vh;
+}
+
+.btn-reset {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  font-size: 2rem;
+}
+
+#main {
+  height: 85vh;
+  width: 100%;
+}
+
+#number {
+  font-size: 10rem;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+}
+
+.process-bar {
+  background-color: rgb(255, 183, 0);
+  height: 100%;
+  width: 0%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <label for="red">r</label>
+      <input
+        type="range"
+        class="color-slider"
+        id="slider-red"
+        step="1"
+        min="0"
+        max="255"
+        value="50"
+      />
+      <label for="green">g</label>
+      <input
+        type="range"
+        class="color-slider"
+        id="slider-green"
+        step="1"
+        min="0"
+        max="255"
+        value="50"
+      />
+      <label for="blue">b</label>
+      <input
+        type="range"
+        class="color-slider"
+        id="slider-blue"
+        step="1"
+        min="0"
+        max="255"
+        value="50"
+      />
+      <button id="btn-random-color">Get random color</button>
+      <span id="rgb-code">?????</span>
+    </header>
+    <main id="main"></main>
+    <script src="script.js"></script>
+  </body>
+</html>

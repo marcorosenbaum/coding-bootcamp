@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  transition: 2000ms;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-dark {
+  background-color: rgb(31, 30, 30);
+}
+#btn-light {
+  border: 5px solid black;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: 2000ms;
+}
+
+.btn-light-on {
+  color: white;
+  background-color: rgb(31, 30, 30);
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0rem 0rem 5rem 3rem yellow;
+}

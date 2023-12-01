@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: salmon;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btn-random-number {
+  height: 2rem;
+}
+
+#btn-reset {
+  height: 2rem;
+}
+
+#picked-numbers {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#picked-numbers * {
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}

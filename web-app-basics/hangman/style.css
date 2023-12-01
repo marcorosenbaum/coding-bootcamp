@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main {
+  margin: 5rem 0;
+  text-align: center;
+  visibility: visible;
+}
+
+#letter-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
