@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat&family=Quicksand:wght@300;400;500&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(241, 241, 241);
+  --background-color: rgb(246, 243, 243);
+  --font-color: rgb(144, 144, 144);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.article-card {
+  background-color: white;
+  margin: 1rem;
+  border-radius: 1.3rem;
+  max-width: 500px;
+  min-width: min-content;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-height: 490px;
+  border-radius: 1.3rem 1.3rem 0rem 0rem;
+}
+.blur-effect {
+  position: absolute;
+  top: 50%;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
+  border-radius: 1.3rem 1.3rem 0rem 0rem;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+.photographer {
+  position: absolute;
+  bottom: 0.7rem;
+  left: 0.7rem;
+  color: var(--font-color);
+  font-size: 0.7rem;
+}
+
+.info {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  background-color: rgb(239, 235, 235, 0.8);
+}
+
+.description {
+  padding: 0rem 0.7rem 0rem 0.7rem;
+}
+
+.description-text {
+  color: var(--font-color);
+  line-height: 1.7rem;
+}
+
+.grid-container {
+  padding: 0.5rem;
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  margin: 3rem 1rem 1rem 1rem;
+  color: var(--font-color);
+
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "price price"
+    "size quantity"
+    "color color"
+    "add-btn add-btn";
+}
+
+.grid-container p {
+  margin: 1rem;
+}
+
+.price {
+  grid-area: price;
+  text-align: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 2rem;
+}
+
+.size-container {
+  grid-area: size;
+  display: flex;
+  align-items: center;
+}
+
+.size {
+  padding: 1rem;
+}
+
+.size-selection {
+  padding: 0.3rem;
+  text-align: left;
+  width: 60px;
+  border: 0;
+  border-radius: 0.3rem;
+}
+
+.quantity {
+  padding: 1rem;
+}
+
+.quantity-selection {
+  padding: 0.3rem;
+  text-align: left;
+  width: 60px;
+  border: 0;
+  border-radius: 0.3rem;
+}
+
+.quantity-container {
+  grid-area: quantity;
+  display: flex;
+  align-items: center;
+}
+
+.color-container {
+  grid-area: color;
+  display: flex;
+  align-items: center;
+}
+
+.fieldset {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+/* color selection asics */
+.color-blue {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 1rem;
+
+  height: 1.5rem;
+  aspect-ratio: 1;
+  background-color: rgb(61, 61, 196);
+  border-radius: 50%;
+}
+
+.color-red {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 1rem;
+
+  height: 1.5rem;
+  aspect-ratio: 1;
+  background-color: rgb(215, 48, 48);
+  border-radius: 50%;
+}
+
+.color-black {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 1rem;
+
+  height: 1.5rem;
+  aspect-ratio: 1;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+input:checked {
+  transform: scale(1.3);
+}
+
+/* color selection adidas */
+.color-olive-black {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 1rem;
+
+  height: 1.5rem;
+  aspect-ratio: 1;
+  background-image: linear-gradient(90deg, rgb(58, 90, 35) 50%, black 50%);
+  border-radius: 50%;
+}
+
+.color-blue-black {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 1rem;
+
+  height: 1.5rem;
+  aspect-ratio: 1;
+  background-image: linear-gradient(90deg, rgb(90, 120, 255) 50%, black 50%);
+  border-radius: 50%;
+}
+
+.color-rose-black {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 1rem;
+
+  height: 1.5rem;
+  aspect-ratio: 1;
+  background-image: linear-gradient(90deg, rgb(233, 103, 144) 50%, black 50%);
+  border-radius: 50%;
+}
+
+/* color selection new balance */
+.color-red-white {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 1rem;
+
+  height: 1.5rem;
+  aspect-ratio: 1;
+  background-image: linear-gradient(
+    90deg,
+    rgb(199, 35, 35) 50%,
+    rgb(255, 255, 255) 50%
+  );
+  border-radius: 50%;
+}
+
+.color-black-white {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 1rem;
+
+  height: 1.5rem;
+  aspect-ratio: 1;
+  background-image: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 50%,
+    rgb(255, 255, 255) 50%
+  );
+  border-radius: 50%;
+}
+
+.add-btn {
+  grid-area: add-btn;
+  background-color: rgb(79, 79, 201);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  border: 0px;
+  font-size: 1.5rem;
+}
+
+/* Media */
+
+@media screen and (max-width: 1100px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}
